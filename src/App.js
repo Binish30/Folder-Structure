@@ -4,7 +4,7 @@ import { FiFilePlus } from "react-icons/fi";
 import { RiFolderAddLine } from "react-icons/ri";
 import FolderStructure from "./components/FolderStructure";
 import "./App.css";
-import { findAndUpdateNode } from "./helper/commonFunctions";
+import { findAndUpdateNode } from "./components/commonFunctions";
 
 const generateId = () => `node-${Date.now()}-${Math.random()}`;
 
@@ -100,7 +100,7 @@ const App = () => {
   // Handle updating a node's value
   const handleUpdateNode = (parentNode, id, newValue) => {
     if (isNameExists(parentNode.children, newValue)) {
-      setWarning("A file or folder cannot have the same name at the same location!");
+      // setWarning("A file or folder cannot have the same name at the same location!");
       return;
     }
 
@@ -112,7 +112,7 @@ const App = () => {
       return newTree;
     });
   };
-
+  
   // Delete node
 const handleDeleteNode = (id) => {
   setTreeData((prevTree) => {
@@ -140,7 +140,7 @@ const handleDeleteNode = (id) => {
 
   return (
     <div className="main">
-      <div style={{ maxWidth: "300px", padding: "10px 0" }}>
+      <div style={{ maxWidth: "300px", padding: "10px 0", margin: "auto" }}>
         <div className="flex-center">
           <div
             onClick={() => setFileToggle(!fileToggle)}

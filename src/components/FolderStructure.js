@@ -46,7 +46,8 @@ const FolderStructure = ({ selectedId, setSelectedId, parentNode, node, onAdd, o
         )}
 
         {/* Add Delete Button */}
-        <button className="delete-button" onClick={() => onDelete(node.id)}>
+        <button className="delete-button" style={{ 'display' :  (selectedId.id === node.id ? 'block' : 'none')}} 
+        onClick={() => onDelete(node.id)}>
           Delete
         </button>
       </div>

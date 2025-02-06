@@ -31,6 +31,7 @@
     border: none;
     color: inherit;
     cursor: pointer;
+    font-size: larger;
   }
   delete-icon {
     transition: transform 0.2s ease;
