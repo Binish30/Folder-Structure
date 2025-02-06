@@ -1,0 +1,51 @@
+   .node-container {
+    margin-left: 20px;
+    color: white;
+    font-size: medium;
+  }
+  
+  .node-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .selected {
+    background: rgba(0, 123, 255, 0.2);
+  }
+  
+  .toggle-icon {
+    cursor: pointer;
+  }
+  
+  .open {
+    transform: rotate(180deg);
+  }
+  
+  .closed {
+    transform: rotate(90deg);
+  }
+  
+  .node-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  delete-icon {
+    transition: transform 0.2s ease;
+  }
+  
+  .delete-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .center-evaluation {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    text-align: center;        
+    font-size: 30px;          
+    font-weight: bold;         
+  }
